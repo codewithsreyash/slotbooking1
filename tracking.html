@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Track Your Appointment</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="slot-booking.html">Book Slot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tracking-section">
+        <div class="container">
+            <form id="trackForm">
+                <label for="appointmentId">Enter Appointment ID:</label>
+                <input type="text" id="appointmentId" name="appointmentId" required>
+
+                <button type="submit">Track Appointment</button>
+            </form>
+
+            <div id="trackingStatus" class="status-message">
+                <p>Your appointment is confirmed and is in the waiting list.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hospital Slot Booking</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

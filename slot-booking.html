@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Slot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book a Slot for Your Appointment</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comparison.html">Compare Hospitals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="form-container">
+        <div class="container">
+            <form id="slotForm">
+                <label for="hospital">Choose a Hospital:</label>
+                <select id="hospital" name="hospital" required>
+                    <option value="anand">Anand Multispeciality Hospital</option>
+                    <option value="city">City Care Hospital</option>
+                    <option value="green">Green Life Hospital</option>
+                </select>
+
+                <label for="date">Choose Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Choose Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Slot</button>
+                <p id="confirmation" class="success-message">Your slot has been successfully booked!</p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hospital Slot Booking</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
